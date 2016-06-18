@@ -9,7 +9,8 @@
     "webpack-dev-server": "webpack-dev-server",
     "webpack": "webpack",
     "build:dev": "npm run rimraf -- build-dev/ && webpack --config ./config/webpack.dev.js --progress --profile --colors --display-error-details --display-cached",
-    "server:dev": "webpack-dev-server --config ./config/webpack.dev.js --content-base ./build-dev --inline --profile --colors --display-error-details --bail"
+    "server:dev": "webpack-dev-server --config ./config/webpack.dev.js --content-base ./build-dev --inline --profile --colors --display-error-details --bail",
+    "postinstall": "typings install"
   },
   "author": "",
   "license": "ISC",
