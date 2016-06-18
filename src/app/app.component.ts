@@ -10,6 +10,10 @@ require('../assets/main.scss');
 })
 
 export class AppComponent implements OnInit {
+	constructor() {
+		console.log('constructed');
+	}
+
 	ngOnInit(): any {
 		console.log('init', ENV);
 	}
